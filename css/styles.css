@@ -1,8 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 ul,
@@ -14,11 +15,7 @@ a {
   text-decoration: none;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
-
-
 /* ------ Style ----- */
-
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -63,7 +60,7 @@ body {
   padding: 1rem;
 }
 
-.main-nav a:hover, .footer-nav a:hover  {
+.main-nav a:hover, .footer-nav a:hover {
   color: #adadad;
 }
 
@@ -85,7 +82,7 @@ body {
 
 .social-link img {
   width: 1em;
-  margin-right: .25rem;
+  margin-right: 0.25rem;
 }
 
 .main-footer .container {
@@ -116,10 +113,10 @@ body {
 .btn {
   color: white;
   background-color: #1762A7;
-  padding: .75rem 1.5rem;
-  border-radius: .5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
   text-decoration: none;
-  font-size: .9rem;
+  font-size: 0.9rem;
   outline: none;
   border: none;
   cursor: pointer;
@@ -134,7 +131,6 @@ body {
 }
 
 /* ------ Index ----- */
-
 .home-main-section {
   display: flex;
   align-items: stretch;
@@ -172,18 +168,16 @@ body {
   .home-main-section .img-wrapper {
     display: none;
   }
-
   .home-main-section {
     justify-content: center;
   }
 }
-
 .home-page-circle-1 {
   position: absolute;
   width: 25vw;
   height: 25vw;
   border-radius: 50%;
-  background-color: rgb(188, 58, 128, .1);
+  background-color: rgba(188, 58, 128, 0.1);
   bottom: 5vw;
   left: 5vw;
   z-index: -1;
@@ -194,7 +188,7 @@ body {
   width: 25vw;
   height: 25vw;
   border-radius: 50%;
-  background-color: rgb(52, 87, 178, .1);
+  background-color: rgba(52, 87, 178, 0.1);
   top: 15vh;
   left: 30vw;
   z-index: -1;
@@ -211,13 +205,13 @@ body {
 }
 
 .home-page-circle-3::before {
-  content: '';
+  content: "";
   transform: translate(40%, 40%);
   position: absolute;
   height: 100%;
   width: 100%;
   border-radius: 50%;
-  background-color: rgb(52, 87, 178, .1);
+  background-color: rgba(52, 87, 178, 0.1);
 }
 
 /* ------ Discover ----- */
@@ -244,8 +238,8 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin: .5rem;
-  padding: .75rem;
+  margin: 0.5rem;
+  padding: 0.75rem;
   width: 100px;
   height: 100px;
   background-color: #202027;
@@ -261,7 +255,6 @@ body {
     flex-direction: column;
     justify-content: center;
   }
-
   .discover-main-section .covers-image {
     margin-top: 2rem;
     height: 30vh;
@@ -269,7 +262,6 @@ body {
   }
 }
 /* ------ Join ----- */
-
 .join-main-section {
   display: flex;
   justify-content: space-between;
@@ -307,7 +299,7 @@ body {
 
 .input-group label {
   font-weight: bold;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .input-group input {
@@ -315,7 +307,7 @@ body {
   background: none;
   border: 1px solid #2E3852;
   font-size: 1em;
-  padding: .5em;
+  padding: 0.5em;
   color: inherit;
   border-radius: 5px;
 }
@@ -329,14 +321,12 @@ body {
     flex-direction: column;
     justify-content: center;
   }
-
   .join-form {
     width: 80vw;
     max-width: inherit;
     margin: 2rem 0;
   }
 }
-
 .join-page-circle-1 {
   position: absolute;
   overflow: hidden;
@@ -348,13 +338,13 @@ body {
 }
 
 .join-page-circle-1::before {
-  content: '';
+  content: "";
   transform: translateX(-20%);
   position: absolute;
   height: 100%;
   width: 100%;
   border-radius: 50%;
-  background-color: rgb(188, 58, 128, .1);
+  background-color: rgba(188, 58, 128, 0.1);
 }
 
 .join-page-circle-2 {
@@ -368,66 +358,21 @@ body {
 }
 
 .join-page-circle-2::before {
-  content: '';
+  content: "";
   transform: translateY(-30%);
   position: absolute;
   height: 100%;
   width: 100%;
   border-radius: 50%;
-  background-color: rgb(52, 87, 178, .1);
+  background-color: rgba(52, 87, 178, 0.1);
 }
 
-
-  /* ======== Canciones ========= */
-  
-  .portada-cancion {
-    height: 100vh;
-  
-    background-image:url(../images/canciones.png);
-    background-position: center;
-    background-size: cover;
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    color: white;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-
-  }
-
-  /*Pie de Pagina Canciones*/
-  .pie-pagina {
-    background-color:#202027;
-    padding: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .pie-pagina ul {
-    display: flex;
-    gap: 20px;
-    color: white;
-    
-  }
-
-
-
-
-/* ------ Podcast ----- */
-
-.podcast-boton {
-  color: white;
-}
-.portada-podcast {
+/* ======== Canciones ========= */
+.portada-cancion {
   height: 100vh;
-
-  background-image:url(../images/podcast.png);
+  background-image: url(../images/canciones.png);
   background-position: center;
   background-size: cover;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -438,8 +383,39 @@ body {
   flex-direction: column;
 }
 
+/*Pie de Pagina Canciones*/
+.pie-pagina {
+  background-color: #202027;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.pie-pagina ul {
+  display: flex;
+  gap: 20px;
+  color: white;
+}
 
+/* ------ Podcast ----- */
+.podcast-boton {
+  color: white;
+}
 
+.portada-podcast {
+  height: 100vh;
+  background-image: url(../images/podcast.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
-
+/*# sourceMappingURL=styles.css.map */
